@@ -8,9 +8,9 @@ CLOPEN tries to beat other teams in hackathon competition.
 **Study:** Computational Science with Applied Mathematics and Risk Analysis
 
 ### Tobias Opsahl 🐼
-**Bachelor's degree:** Mathematics with informatics
+**Bachelor's degree:** Mathematics with Informatics
 
-**Study:** Data Science with Applied Chinese
+**Study:** Data Science with Applied Japanese
 
 ### Øystein Høistad Bruce 🐮
 **Bachelor's degree:** Mathematics and Economics
