@@ -18,6 +18,7 @@ def find_long_time_gaps(df2):
 
     sorted_val = Sort(c)
     for i in range(len(sorted_val) - 1):
+        # time i works for class 1
         df2['long_time_steps'] = np.where(df2['long_time_steps'].between(sorted_val[i][0], sorted_val[i+1][0]), sorted_val[i+1][1]*i, df2['long_time_steps'])
 
     # df2['long_time_steps'] = df2['long_time_steps'].between(sorted_val[i+1][0], sorted_val[i+1][0]), sorted_val[i+1][1]*i, df2['long_time_steps'])
@@ -32,9 +33,9 @@ def Sort(sub_li):
     return sub_li
 
 
-input = pd.read_parquet("data/prediction_input.parquet")
+input = pd.read_parquet("../data/prediction_input.parquet")
 input = input[input["Turbine_Pressure Drafttube"].isna() == False]
-df = pd.read_parquet("data/input_dataset-2.parquet")
+df = pd.read_parquet("../data/input_dataset-2.parquet")
 df = df[df["Bolt_1_Tensile"].isna() == False]
 df_time_array2 = df.index.values.astype(float)
 df_time_array1 = df_time_array2 - df_time_array2[0]
@@ -55,8 +56,8 @@ X_train = df[["Unit_4_Power", "Unit_4_Reactive Power", "Turbine_Guide Vane Openi
  "time", "time_s"]].iloc[:split]
 X_test = df[["Unit_4_Power", "Unit_4_Reactive Power", "Turbine_Guide Vane Opening", "Turbine_Pressure Drafttube", "Turbine_Pressure Spiral Casing", "Turbine_Rotational Speed", \
  "time", "time_s"]].iloc[split:]
-y_train = df["Bolt_2_Tensile"].iloc[:split]
-y_test = df["Bolt_2_Tensile"].iloc[split:]
+y_train = df["Bolt_1_Tensile"].iloc[:split]
+y_test = df["Bolt_1_Tensile"].iloc[split:]
 
 logreg = LinearRegression().fit(X_train, y_train)
 pred_train = logreg.predict(X_train)
