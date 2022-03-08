@@ -18,3 +18,7 @@ CLOPEN tries to beat other teams in hackathon competition.
 **Bachelor's degree:** Mathematics and Economics
 
 **Study:** Computational Science with Applied Mathematics and Risk Analysis
+
+The code will exlusively _not_ be written in notebooks. Why?
+
+![](Annoyed_Cat.png)
