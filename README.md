@@ -1,6 +1,8 @@
 # HACKATHON
 CLOPEN tries to beat other teams in hackathon competition.
 
+![](https://media.giphy.com/media/VekcnHOwOI5So/giphy.gif)
+
 ## TEAM MEMBERS:
 ### Sigurd Holmsen 🐻‍❄️
 **Bachelor's degree:** Mathematics and Economics
