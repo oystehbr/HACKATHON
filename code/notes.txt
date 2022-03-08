@@ -1,6 +1,0 @@
-Bolt_1 =  sorted_val[i+1][1]*i      
-Bolt_2 =  sorted_val[i+1][1]     # 
-Bolt_3 = sorted_val[i][1]       # probably, not include the parameter
-Bolt_4 = sorted_val[i+1][1]    
-Bolt_5 = sorted_val[i+1][1]
-Bolt_6 = sorted_val[i+1][1]*i  
